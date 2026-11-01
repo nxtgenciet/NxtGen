@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NxtGen Computer Institute</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #111827;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #0f172a, #1d4ed8);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background: #38bdf8;
+            color: #111827;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* SECTION */
+        section {
+            padding: 70px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* COURSES */
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .course {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .course:hover {
+            transform: translateY(-8px);
+        }
+
+        .course h3 {
+            margin-bottom: 10px;
+            color: #1d4ed8;
+        }
+
+        /* WHY US */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            background: #eaf4ff;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px 0;
+            font-size: 17px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #020617;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* MOBILE */
+        @media(max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Nxt<span>Gen</span> CIET</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome to <span>NxtGen Computer Institute</span></h1>
+
+            <p>
+                Learn Computer Skills and Build Your Future With Professional Training.
+            </p>
+
+            <p style="margin-top: 15px;">
+                MS Word | MS Excel | MS PowerPoint | Tally | CorelDRAW | Photoshop
+            </p>
+
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2 class="title">About Us</h2>
+        <p class="subtitle">Where Technology Meets Education</p>
+
+        <div class="about">
+            <p>
+                NxtGen Computer Institute of Education & Technology is dedicated
+                to providing quality computer education to students. Our goal is
+                to help students develop practical computer skills and become
+                confident for their future careers.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- COURSES -->
+    <section id="courses">
+        <h2 class="title">Our Courses</h2>
+        <p class="subtitle">Learn the skills that matter</p>
+
+        <div class="course-container">
+
+            <div class="course">
+                <h3>MS Word</h3>
+                <p>Learn professional document creation and formatting.</p>
+            </div>
+
+            <div class="course">
+                <h3>MS Excel</h3>
+                <p>Learn formulas, functions, charts and advanced Excel.</p>
+            </div>
+
+            <div class="course">
+                <h3>MS PowerPoint</h3>
+                <p>Create professional presentations and slides.</p>
+            </div>
+
+            <div class="course">
+                <h3>Tally</h3>
+                <p>Learn accounting, GST and business management.</p>
+            </div>
+
+            <div class="course">
+                <h3>CorelDRAW</h3>
+                <p>Learn graphic designing, banners and professional designs.</p>
+            </div>
+
+            <div class="course">
+                <h3>Photoshop</h3>
+                <p>Learn photo editing and creative graphic design.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FEATURES -->
+    <section>
+        <h2 class="title">Why Choose Us?</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>💻 Practical Learning</h3>
+                <p>Learn with hands-on practical training.</p>
+            </div>
+
+            <div class="feature">
+                <h3>👨‍🏫 Expert Guidance</h3>
+                <p>Get proper guidance throughout your course.</p>
+            </div>
+
+            <div class="feature">
+                <h3>📚 Latest Skills</h3>
+                <p>Learn useful and modern computer skills.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎓 Career Focused</h3>
+                <p>Build skills that can help your future career.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2 class="title">Contact Us</h2>
+
+        <p><strong>NxtGen Computer Institute of Education & Technology</strong></p>
+
+        <p>
+    📞 Phone:
+    <a href="tel:+919876543210" style="color: white;">
+        +91 9876543210
+    </a>
+</p>
+
+<p>
+    📧 Email:
+    <a href="mailto:nxtgenciet@gmail.com" style="color: white;">
+        nxtgenciet@gmail.com
+    </a>
+</p>
+
+        <p>📍 Address: Old Haibatpur,Yusufpur Chak Saberi, G.B. Nagar, U.P. - 201301</p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 NxtGen Computer Institute of Education & Technology</p>
+        <p>All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
